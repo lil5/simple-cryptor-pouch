@@ -1,0 +1,32 @@
+{
+  "name": "crypto-js-pouch",
+  "version": "0.0.0",
+  "description": "pouchdb AES encryption using brix/crypto-js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nyc ava test/*.spec.js"
+  },
+  "keywords": [
+    "pouchdb",
+    "crypto-js",
+    "aes",
+    "encrypt"
+  ],
+  "author": "lil5",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nyc": "^11.3.0"
+  },
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js"
+    ]
+  }
+}
