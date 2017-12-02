@@ -28,5 +28,8 @@
     "exclude": [
       "**/*.spec.js"
     ]
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
   }
 }
