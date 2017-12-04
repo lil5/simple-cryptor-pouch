@@ -4,6 +4,7 @@
   "description": "pouchdb AES encryption using brix/crypto-js",
   "main": "src/index.js",
   "scripts": {
+    "lint": "eslint src/**/*.js",
     "test": "nyc ava test/*.spec.js"
   },
   "keywords": [
@@ -16,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "^0.24.0",
+    "editorconfig-checker": "^1.1.1",
     "eslint": "^4.12.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.8.0",
