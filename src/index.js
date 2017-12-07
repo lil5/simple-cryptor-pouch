@@ -3,6 +3,12 @@ import SimpleCryptoJS from 'simple-crypto-js'
 
 import cryptor from './cryptor'
 
+/**
+ * pouch function to encrypt and decrypt
+ * @param  {string} password
+ * @param  {Object} [options={}]
+ * @return {Object | Promise}
+ */
 function simplecryptor (password, options = {}) {
   const db = this
 

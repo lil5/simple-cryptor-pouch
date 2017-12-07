@@ -1,3 +1,9 @@
+/**
+ * check if sting is under ignore Array
+ * @param  {array}  ignore  strings to be ignored
+ * @param  {string}  str    string to check
+ * @return {Boolean}        is str in ignore array
+ */
 function isIgnore (ignore, str) {
   let result = false
   let i = 0
@@ -11,7 +17,14 @@ function isIgnore (ignore, str) {
   return result
 }
 
-// if object hack not working see https://stackoverflow.com/questions/9716468/is-there-any-function-like-isnumeric-in-javascript-to-validate-numbers
+/**
+ * Does the encryption and decryption
+ * @param  {SimpleCryptoJS}  simpleCryptoJS  object of simple-crypto-js
+ * @param  {Object<any>}  doc                Object from transform-pouch
+ * @param  {Array}  ignore                   doc property name not to be changed
+ * @param  {Boolean} isIncoming              is to be encrypted or decrypted
+ * @return {Object<any>}                     same as doc with unencrypted values
+ */
 function cryptor (simpleCryptoJS, doc, ignore, isIncoming) {
   const resultDoc = {}
 
