@@ -26,7 +26,8 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "nyc": "^11.3.0",
-    "pouchdb": "^6.3.4"
+    "pouchdb": "^6.3.4",
+    "pouchdb-adapter-node-websql": "^6.3.4"
   },
   "nyc": {
     "exclude": [
