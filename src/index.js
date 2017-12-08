@@ -1,7 +1,7 @@
-import { transform } from 'transform-pouch'
-import SimpleCryptoJS from 'simple-crypto-js'
+const SimpleCryptoJS = require('simple-crypto-js').default
+const transform = require('transform-pouch').transform
 
-import cryptor from './cryptor'
+const cryptor = require('./cryptor')
 
 /**
  * pouch function to encrypt and decrypt

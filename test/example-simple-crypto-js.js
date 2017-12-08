@@ -1,4 +1,4 @@
-const SimpleCryptoJS = require('simple-crypto-js')
+const SimpleCryptoJS = require('simple-crypto-js').default
 
 // example
 function testSimpleCryptoJS (password = 'password') {
@@ -11,4 +11,4 @@ function testSimpleCryptoJS (password = 'password') {
   return decryptedObj.text
 }
 
-exports = testSimpleCryptoJS
+module.exports = testSimpleCryptoJS

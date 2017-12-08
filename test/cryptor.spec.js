@@ -1,6 +1,7 @@
-import test from 'ava'
-import SimpleCryptoJS from 'simple-crypto-js'
-import cryptor, { isIgnore } from '../src/cryptor'
+const SimpleCryptoJS = require('simple-crypto-js').default
+const test = require('ava')
+const cryptor = require('../src/cryptor')
+const isIgnore = cryptor.isIgnore
 
 const ignore = ['_id', '_rev', '_deleted']
 
