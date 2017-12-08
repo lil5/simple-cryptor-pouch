@@ -13,9 +13,7 @@ function simplecryptor (password, options = {}) {
   const db = this
 
   // set default ignore
-  options.ignore = options.ignore
-    ? ['_id', '_rev', '_deleted'].concat(options.ignore)
-    : options.ignore
+  options.ignore = ['_id', '_rev', '_deleted'].concat(options.ignore)
 
   const simpleCryptoJS = new SimpleCryptoJS(password)
 
