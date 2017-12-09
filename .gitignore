@@ -8,4 +8,5 @@ tmp
 local
 build
 package-lock.json
-test/.pouchdb
+/test/.pouchdb
+/examples/.pouchdb
