@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+yarn.lock
+yarn-error.log
+.nyc_output
+**/.DS_Store
+tmp
+local
+build
+package-lock.json
+/test/.pouchdb
+/examples/.pouchdb
