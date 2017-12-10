@@ -1,5 +1,5 @@
 {
-  "name": "crypto-js-pouch",
+  "name": "simple-cryptor-pouch",
   "version": "0.1.0",
   "description": "pouchdb AES encryption using brix/crypto-js",
   "main": "src/index.js",
