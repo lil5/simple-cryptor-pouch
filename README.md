@@ -27,7 +27,7 @@ This project should work on the following:
 
 ## Install
 
-This plugin ~~is~~ _will be_ hosted on npm. To install in Node.js:
+This plugin is hosted on npm:
 
 ```bash
 npm i -s simple-cryptor-pouch
