@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "description": "pouchdb AES encryption using brix/crypto-js",
   "main": "src/index.js",
+  "author": "lil5",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint src/**/*.js",
     "test:watch": "ava --watch test/*.spec.js",
     "test": "nyc ava test/*.spec.js"
+  },
+  "dependencies": {
+    "simple-crypto-js": "^1.1.1",
+    "transform-pouch": "^1.1.4"
   },
   "keywords": [
     "pouchdb",
@@ -14,8 +20,10 @@
     "aes",
     "encrypt"
   ],
-  "author": "lil5",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lil5/simple-cryptor-pouch.git"
+  },
   "devDependencies": {
     "ava": "^0.24.0",
     "editorconfig-checker": "^1.1.1",
@@ -29,13 +37,16 @@
     "pouchdb": "^6.3.4",
     "pouchdb-adapter-node-websql": "^6.3.4"
   },
+  "contributors": [
+    "lil5 <li@last.nl>",
+  ],
+  "bugs": {
+    "url": "https://github.com/lil5/simple-cryptor-pouch/issues"
+  },
+  "homepage": "https://github.com/lil5/simple-cryptor-pouch#readme",
   "nyc": {
     "exclude": [
       "**/*.spec.js"
     ]
-  },
-  "dependencies": {
-    "simple-crypto-js": "^1.1.1",
-    "transform-pouch": "^1.1.4"
   }
 }
