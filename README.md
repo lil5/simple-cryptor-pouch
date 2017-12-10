@@ -1,3 +1,7 @@
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![License][gh-license-image]][gh-license-url]
+
 # simple-cryptor-pouch
 
 pouchdb AES encryption using [danang-id/simple-crypto-js] which uses [brix/crypto-js]
@@ -100,3 +104,11 @@ file: [examples/sync-encrypted-remote.js](https://github.com/lil5/simple-cryptor
 [danang-id/simple-crypto-js]: https://github.com/danang-id/simple-crypto-js
 [calvinmetcalf/crypto-pouch]: https://github.com/calvinmetcalf/crypto-pouch
 [brix/crypto-js]: https://github.com/brix/crypto-js
+
+
+[npm-image]: https://img.shields.io/npm/v/simple-cryptor-pouch.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/simple-cryptor-pouch
+[travis-image]: https://img.shields.io/travis/lil5/simple-cryptor-pouch/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/lil5/simple-cryptor-pouch
+[gh-license-image]: https://img.shields.io/github/license/lil5/simple-cryptor-pouch.svg?style=flat-square
+[gh-license-url]: https://github.com/lil5/simple-cryptor-pouch/blob/master/LICENSE
