@@ -38,7 +38,7 @@
     "pouchdb-adapter-node-websql": "^6.3.4"
   },
   "contributors": [
-    "lil5 <li@last.nl>",
+    "lil5 <li@last.nl>"
   ],
   "bugs": {
     "url": "https://github.com/lil5/simple-cryptor-pouch/issues"
