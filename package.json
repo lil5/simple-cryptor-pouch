@@ -1,12 +1,19 @@
 {
   "name": "simple-cryptor-pouch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "pouchdb AES encryption using brix/crypto-js",
   "main": "src/index.js",
+  "author": "lil5",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint src/**/*.js",
     "test:watch": "ava --watch test/*.spec.js",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "test": "nyc ava test/*.spec.js"
+  },
+  "dependencies": {
+    "simple-crypto-js": "^1.1.1",
+    "transform-pouch": "^1.1.4"
   },
   "keywords": [
     "pouchdb",
@@ -14,10 +21,13 @@
     "aes",
     "encrypt"
   ],
-  "author": "lil5",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lil5/simple-cryptor-pouch.git"
+  },
   "devDependencies": {
     "ava": "^0.24.0",
+    "coveralls": "^3.0.0",
     "editorconfig-checker": "^1.1.1",
     "eslint": "^4.12.1",
     "eslint-config-standard": "^10.2.1",
@@ -25,17 +35,21 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "fs-extra": "^5.0.0",
     "nyc": "^11.3.0",
     "pouchdb": "^6.3.4",
     "pouchdb-adapter-node-websql": "^6.3.4"
   },
+  "contributors": [
+    "lil5 <li@last.nl>"
+  ],
+  "bugs": {
+    "url": "https://github.com/lil5/simple-cryptor-pouch/issues"
+  },
+  "homepage": "https://github.com/lil5/simple-cryptor-pouch#readme",
   "nyc": {
     "exclude": [
       "**/*.spec.js"
     ]
-  },
-  "dependencies": {
-    "simple-crypto-js": "^1.1.1",
-    "transform-pouch": "^1.1.4"
   }
 }

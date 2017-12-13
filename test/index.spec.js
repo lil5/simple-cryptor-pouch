@@ -3,14 +3,14 @@ const plugins = require('../src/index')
 const PouchWebSql = require('pouchdb-adapter-node-websql')
 const PouchDB = require('pouchdb')
 const path = require('path')
-const fs = require('fs')
+const fs = require('fs-extra')
 const dbPath = path.join(__dirname, '/.pouchdb')
 
 function pouchStart (t, name) {
   PouchDB.plugin(plugins)
   PouchDB.plugin(PouchWebSql)
-  t.log(`Database path: ${dbPath}/${name}.db`)
-  const db = new PouchDB(`${dbPath}/${name}.db`, { adapter: 'websql' })
+  t.log(`Database path: ${dbPath}/${name}.sqlite`)
+  const db = new PouchDB(`${dbPath}/${name}.sqlite`, { adapter: 'websql' })
   return db
 }
 
@@ -20,16 +20,16 @@ function checkResponse (t, id, response) {
   t.is(response.id, id)
 }
 
-function removeFile (filepath) {
+test.before(t => {
+  const dirpath = dbPath
   try {
-    fs.unlinkSync(filepath)
+    fs.emptydirSync(dirpath)
   } catch (err) {
-    if (err.code !== 'ENOENT') throw err
+    if (err) throw err
   }
-}
+})
 
 test('plugin install', t => {
-  removeFile(`${dbPath}/install.db`)
   const db = pouchStart(t, 'install')
   db.simplecryptor('password')
 
@@ -37,12 +37,11 @@ test('plugin install', t => {
     if (err) t.fail(err)
 
     t.log(JSON.stringify(info))
-    t.true(info['db_name'] === dbPath + '/install.db')
+    t.true(info['db_name'] === dbPath + '/install.sqlite')
   })
 })
 
 test('empty db put, get', t => {
-  removeFile(`${dbPath}/empty.db`)
   const db = pouchStart(t, 'empty')
   db.simplecryptor('password')
 
@@ -68,10 +67,6 @@ test('empty db put, get', t => {
 })
 
 test('change password', t => {
-  // remove from last test to have clean tests
-  removeFile(`${dbPath}/pass-original.db`)
-  removeFile(`${dbPath}/pass-changed.db`)
-
   // create two databases
   const originalDB = pouchStart(t, 'pass-original')
   const changedDB = pouchStart(t, 'pass-changed')
