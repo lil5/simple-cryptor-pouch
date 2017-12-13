@@ -1,5 +1,6 @@
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
+[![Coverage][coveralls-image]][coveralls-url]
 [![License][gh-license-image]][gh-license-url]
 
 # simple-cryptor-pouch
@@ -110,5 +111,7 @@ file: [examples/sync-encrypted-remote.js](https://github.com/lil5/simple-cryptor
 [npm-url]: https://www.npmjs.com/package/simple-cryptor-pouch
 [travis-image]: https://img.shields.io/travis/lil5/simple-cryptor-pouch/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/lil5/simple-cryptor-pouch
+[coveralls-image]: https://img.shields.io/coveralls/github/lil5/simple-cryptor-pouch.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/github/lil5/simple-cryptor-pouch
 [gh-license-image]: https://img.shields.io/github/license/lil5/simple-cryptor-pouch.svg?style=flat-square
 [gh-license-url]: https://github.com/lil5/simple-cryptor-pouch/blob/master/LICENSE
