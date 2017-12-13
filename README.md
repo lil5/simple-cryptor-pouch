@@ -110,8 +110,8 @@ file: [examples/sync-encrypted-remote.js](https://github.com/lil5/simple-cryptor
 [npm-image]: https://img.shields.io/npm/v/simple-cryptor-pouch.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/simple-cryptor-pouch
 [travis-image]: https://img.shields.io/travis/lil5/simple-cryptor-pouch/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/lil5/simple-cryptor-pouch
-[coveralls-image]: https://img.shields.io/coveralls/github/lil5/simple-cryptor-pouch.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/github/lil5/simple-cryptor-pouch
+[travis-url]: https://travis-ci.org/lil5/simple-cryptor-pouch/branches
+[coveralls-image]: https://img.shields.io/coveralls/github/lil5/simple-cryptor-pouch/master.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/github/lil5/simple-cryptor-pouch?branch=master
 [gh-license-image]: https://img.shields.io/github/license/lil5/simple-cryptor-pouch.svg?style=flat-square
 [gh-license-url]: https://github.com/lil5/simple-cryptor-pouch/blob/master/LICENSE
