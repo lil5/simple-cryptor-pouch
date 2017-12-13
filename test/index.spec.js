@@ -9,8 +9,8 @@ const dbPath = path.join(__dirname, '/.pouchdb')
 function pouchStart (t, name) {
   PouchDB.plugin(plugins)
   PouchDB.plugin(PouchWebSql)
-  t.log(`Database path: ${dbPath}/${name}.db`)
-  const db = new PouchDB(`${dbPath}/${name}.db`, { adapter: 'websql' })
+  t.log(`Database path: ${dbPath}/${name}.sqlite`)
+  const db = new PouchDB(`${dbPath}/${name}.sqlite`, { adapter: 'websql' })
   return db
 }
 
@@ -37,7 +37,7 @@ test('plugin install', t => {
     if (err) t.fail(err)
 
     t.log(JSON.stringify(info))
-    t.true(info['db_name'] === dbPath + '/install.db')
+    t.true(info['db_name'] === dbPath + '/install.sqlite')
   })
 })
 
